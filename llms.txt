@@ -50,6 +50,7 @@ Website: https://thegardencode.com/
 - Ghostty (https://ghostty.org/) — Fast, native terminal emulator built with Zig for macOS and Linux. Free. MCP.
 - GitHub Copilot (https://github.com/features/copilot) — AI pair programmer that suggests code inline as you type. Free & Paid. MCP.
 - Google AI Studio (https://aistudio.google.com/) — Google's web IDE for prototyping with Gemini models, multimodal prompts, and API access. Free & Paid. MCP.
+- Kimi (https://www.kimi.com/) — AI assistant from Moonshot AI with long-context reasoning and strong coding capabilities. Free & Paid.
 - Lovable (https://lovable.dev/) — AI full-stack engineer that builds production web apps from prompts. Free & Paid. MCP.
 - MCP Market (https://mcpmarket.com/) — Marketplace and directory for discovering and sharing MCP servers and tools. Free. MCP.
 - Open Claw (https://openclaw.ai/) — Open-source personal AI assistant that runs locally and works across apps and browsers. Free. MCP.
@@ -103,6 +104,7 @@ Website: https://thegardencode.com/
 - Bezi (https://www.bezi.com/) — Collaborative 3D design tool for creating interactive spatial interfaces. Free & Paid.
 - Blender (https://www.blender.org/) — Free, open-source 3D creation suite for modeling, animation, and rendering. Free. MCP.
 - Houdini (https://www.sidefx.com/) — Procedural 3D software for VFX, simulation, and technical art. Free & Paid. MCP.
+- Hunyuan3D (https://3d.hunyuan.tencent.com/) — Tencent's AI model for generating 3D assets from text and images. Free & Paid.
 - Spline (https://spline.design/) — Browser-based 3D design tool with real-time collaboration and web export. Free & Paid. MCP.
 - Three.js (https://threejs.org/) — Open-source JavaScript 3D library for rendering interactive WebGL graphics in the browser. Free. MCP.
 - Womp (https://womp.com/) — Intuitive browser-based 3D modeling tool with smooth clay-like sculpting. Free & Paid.

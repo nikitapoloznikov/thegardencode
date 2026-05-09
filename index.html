@@ -557,6 +557,7 @@ html[data-theme="light"] .shader-wrap{
     <li><a href="https://ghostty.org/">Ghostty</a> — Fast, native terminal emulator built with Zig for macOS and Linux.</li>
     <li><a href="https://github.com/features/copilot">GitHub Copilot</a> — AI pair programmer that suggests code inline as you type.</li>
     <li><a href="https://aistudio.google.com/">Google AI Studio</a> — Google's web IDE for prototyping with Gemini models, multimodal prompts, and API access.</li>
+    <li><a href="https://www.kimi.com/">Kimi</a> — AI assistant from Moonshot AI with long-context reasoning and strong coding capabilities.</li>
     <li><a href="https://lovable.dev/">Lovable</a> — AI full-stack engineer that builds production web apps from prompts.</li>
     <li><a href="https://mcpmarket.com/">MCP Market</a> — Marketplace and directory for discovering and sharing MCP servers and tools.</li>
     <li><a href="https://openclaw.ai/">Open Claw</a> — Open-source personal AI assistant that runs locally.</li>
@@ -621,6 +622,7 @@ html[data-theme="light"] .shader-wrap{
     <li><a href="https://www.bezi.com/">Bezi</a> — Collaborative 3D design tool for creating interactive spatial interfaces.</li>
     <li><a href="https://www.blender.org/">Blender</a> — Free, open-source 3D creation suite for modeling, animation, and rendering.</li>
     <li><a href="https://www.sidefx.com/">Houdini</a> — Procedural 3D software for VFX, simulation, and technical art.</li>
+    <li><a href="https://3d.hunyuan.tencent.com/">Hunyuan3D</a> — Tencent's AI model for generating 3D assets from text and images.</li>
     <li><a href="https://spline.design/">Spline</a> — Browser-based 3D design tool with real-time collaboration and web export.</li>
     <li><a href="https://threejs.org/">Three.js</a> — Open-source JavaScript 3D library for rendering interactive WebGL graphics.</li>
     <li><a href="https://womp.com/">Womp</a> — Intuitive browser-based 3D modeling tool with smooth clay-like sculpting.</li>
@@ -674,6 +676,7 @@ html[data-theme="light"] .shader-wrap{
     <li><a href="https://musicforprogramming.net/">musicForProgramming</a> — Curated series of ambient and focus mixes designed for coding sessions.</li>
     <li><a href="https://radio.garden/">Radio Garden</a> — Interactive globe for exploring and listening to live radio stations worldwide.</li>
     <li><a href="https://somafm.com/">SomaFM</a> — Commercial-free, listener-supported internet radio with over 30 channels of curated music.</li>
+    <li><a href="https://www.youtube.com/watch?v=AUQKjgKQF7w">Claude FM</a> — Music for thinking and building, curated by Claude.</li>
   </ul>
   </noscript>
   <div class="idea" style="opacity:0;transition:opacity 0.6s ease"><span class="gem-wrap" style="opacity:0;transition:opacity 0.8s ease"><video class="idea-gem gem-dark" autoplay loop muted playsinline></video><video class="idea-gem gem-light" autoplay loop muted playsinline></video></span><span id="idea"></span><span class="footer-text">Grown by Orlock &middot; 2026</span></div>
@@ -733,6 +736,7 @@ const TOOLS = [
     { name: "Ghostty", url: "https://ghostty.org/", d: "Fast, native terminal emulator built with Zig for macOS and Linux.", p: "Free", m: true },
     { name: "GitHub Copilot", url: "https://github.com/features/copilot", d: "AI pair programmer that suggests code inline as you type.", p: "Free & Paid", m: true },
     { name: "Google AI Studio", url: "https://aistudio.google.com/", d: "Google's web IDE for prototyping with Gemini models, multimodal prompts, and API access.", p: "Free & Paid", m: true },
+    { name: "Kimi", url: "https://www.kimi.com/", d: "AI assistant from Moonshot AI with long-context reasoning and strong coding capabilities.", p: "Free & Paid" },
     { name: "Lovable", url: "https://lovable.dev/", d: "AI full-stack engineer that builds production web apps from prompts.", p: "Free & Paid", m: true },
     { name: "MCP Market", url: "https://mcpmarket.com/", d: "Marketplace and directory for discovering and sharing MCP servers and tools.", p: "Free", m: true },
     { name: "Open Claw", url: "https://openclaw.ai/", d: "Open-source personal AI assistant that runs locally and works across apps and browsers.", p: "Free", m: true },
@@ -788,6 +792,7 @@ const TOOLS = [
     { name: "Bezi", url: "https://www.bezi.com/", d: "Collaborative 3D design tool for creating interactive spatial interfaces.", p: "Free & Paid" },
     { name: "Blender", url: "https://www.blender.org/", d: "Free, open-source 3D creation suite for modeling, animation, and rendering.", p: "Free", m: true },
     { name: "Houdini", url: "https://www.sidefx.com/", d: "Procedural 3D software for VFX, simulation, and technical art.", p: "Free & Paid", m: true },
+    { name: "Hunyuan3D", url: "https://3d.hunyuan.tencent.com/", d: "Tencent's AI model for generating 3D assets from text and images.", p: "Free & Paid" },
     { name: "Spline", url: "https://spline.design/", d: "Browser-based 3D design tool with real-time collaboration and web export.", p: "Free & Paid", m: true },
     { name: "Three.js", url: "https://threejs.org/", d: "Open-source JavaScript 3D library for rendering interactive WebGL graphics in the browser.", p: "Free", m: true },
     { name: "Womp", url: "https://womp.com/", d: "Intuitive browser-based 3D modeling tool with smooth clay-like sculpting.", p: "Free & Paid" },
@@ -835,6 +840,7 @@ const TOOLS = [
     { name: "musicForProgramming", url: "https://musicforprogramming.net/", d: "Curated series of ambient and focus mixes designed for coding sessions.", p: "Free" },
     { name: "Radio Garden", url: "https://radio.garden/", d: "Interactive globe for exploring and listening to live radio stations worldwide.", p: "Free" },
     { name: "SomaFM", url: "https://somafm.com/", d: "Commercial-free, listener-supported internet radio with over 30 channels of curated music.", p: "Free" },
+    { name: "Claude FM", url: "https://www.youtube.com/watch?v=AUQKjgKQF7w", d: "Music for thinking and building, curated by Claude.", p: "Free" },
   ]},
 ];
 
@@ -847,6 +853,11 @@ const DIRECT_FAVICONS = {
   'www.figma.com': 'https://static.figma.com/app/icon/1/favicon.svg',
   'somafm.com': 'https://somafm.com/favicon.ico',
   'before.click': 'https://before.click/favicon-264.png',
+};
+
+// Per-URL favicon overrides (when one entry on a host needs a different icon)
+const URL_FAVICONS = {
+  'https://www.youtube.com/watch?v=AUQKjgKQF7w': 'https://claude.ai/favicon.ico',
 };
 
 // Sites with broken favicons — show first letter on a neutral background
@@ -865,6 +876,7 @@ function makeLetterFavicon(name) {
 }
 
 function getFaviconUrl(url, name) {
+  if (URL_FAVICONS[url]) return URL_FAVICONS[url];
   try {
     const u = new URL(url);
     if (EMOJI_FAVICONS[u.hostname]) return `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-size="48">${EMOJI_FAVICONS[u.hostname]}</text></svg>`)}`;
